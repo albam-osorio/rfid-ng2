@@ -1,0 +1,25 @@
+.mh-layout-transparent {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 75px top;
+}
+
+.mh-layout-transparent .mdl-layout__header,
+.mh-layout-transparent .mdl-layout__drawer-button {
+    color: white;
+}
+
+.mh-drawer-header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    height: 151px;
+}
+
+.mh-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 24px;
+}

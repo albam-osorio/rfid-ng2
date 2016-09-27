@@ -1,0 +1,14 @@
+<p-tabView (onChange)="tabPanelChanged($event)">
+  <p-tabPanel header="Masivo" leftIcon="fa fa-circle " [selected]="tabIndex==0">
+    Masivo
+    <!--<tms-s-despachos></tms-s-despachos>-->
+  </p-tabPanel>
+  <p-tabPanel header="Ingresos" leftIcon="fa fa-circle " [selected]="tabIndex==1">
+    Ingresos
+    <!--<tms-s-despachos></tms-s-despachos>-->
+  </p-tabPanel>
+  <p-tabPanel header="Traslados" leftIcon="fa fa-circle " [selected]="tabIndex==2">
+    Traslados
+    <!--<tms-s-recogidas></tms-s-recogidas>-->
+  </p-tabPanel>
+</p-tabView>

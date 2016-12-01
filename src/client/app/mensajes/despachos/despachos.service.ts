@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import {SecundariaService} from '../secundaria.service';
+import {MensajesService} from '../mensajes.service';
 
 @Injectable()
 export class DespachosService {
-  constructor(private secundariaService: SecundariaService) {
+  constructor(private mensajesService: MensajesService) {
   }
 }

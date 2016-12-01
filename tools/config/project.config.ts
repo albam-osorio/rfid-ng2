@@ -4,7 +4,7 @@ import { SeedConfig } from './seed.config';
 
 /**
  * This class extends the basic seed configuration, allowing for project specific overrides. A few examples can be found
- * below.
+ * below.RFID
  */
 export class ProjectConfig extends SeedConfig {
 
@@ -29,7 +29,7 @@ export class ProjectConfig extends SeedConfig {
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
       { src: 'primeng/resources/primeng.min.css', inject: true },
-      { src: 'primeng/resources/themes/omega/theme.css', inject: true },
+      { src: 'primeng/resources/themes/omega/theme.css', inject: true },  
       { src: 'font-awesome/css/font-awesome.min.css', inject: true },
       { src: 'material-design-lite/material.min.js', inject: true },
       { src: 'material-design-lite/material.min.css', inject: true },

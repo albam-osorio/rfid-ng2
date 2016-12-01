@@ -60,8 +60,8 @@ export class LocalStorageService {
         localStorage.setItem(key, JSON.stringify(value));
     }
 
-    getDefaultTabIndex(key: string) {
-        let value = localStorage.getItem(key);
+    getDefaultTabIndex(key: string): number {
+        let value = +localStorage.getItem(key);
 
         if (!value) {
             value = 0;

@@ -2,15 +2,15 @@ import { Component, OnInit} from '@angular/core';
 
 import { LocalStorageService } from '../common/services/local-storage.service';
 
-const KEY_TABINDEX: string = "tms-s.tabindex";
+const KEY_TABINDEX: string = "mensajes.tabindex";
 
 @Component({
   moduleId: module.id,
-  selector: 'tms-s',
-  templateUrl: 'secundaria.component.html',
+  selector: 'mensajes',
+  templateUrl: 'mensajes.component.html',
 
 })
-export class SecundariaComponent implements OnInit {
+export class MensajesComponent implements OnInit {
   tabIndex: number = 0;
   constructor(private localStorageService: LocalStorageService) {}
 

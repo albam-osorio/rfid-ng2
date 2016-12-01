@@ -1,0 +1,58 @@
+<div class="ui-g">
+  <div class="ui-g-6">
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncAll()" label="Todas" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Todas</button>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncLocaciones()" label="Locaciones" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Locaciones</button>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncProductos()" label="Productos" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Productos</button>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncDespachosCreate()" label="Despachos" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Despachos</button>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncSalidasTiendas()" label="Salidas de Tiendas" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Salidas de Tiendas</button>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncOrdenesProduccion()" label="Ordenes de Producción" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ordenes de Producción</button>
+      </div>
+    </div>
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncEntradasProductosTerminado()" label="Productos terminados" style="width:100%"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Productos terminados</button>
+      </div>
+    </div>
+  </div>
+  <div class="ui-g-6">
+    <div class="ui-g">
+      <div class="ui-g-4">
+        <textarea rows="20" cols="30" pInputTextarea [(ngModel)]="externalId" (input)="onChangeExternalId()" ></textarea>
+      </div>
+    </div>
+    <div class="ui-g">
+      Lineas:{{externalIdCount}} Efectivas: {{externalIdDistinctCount}}
+    </div>
+    <div class="ui-g">      
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="syncDespachosUpdate()" label="Despachos (UPD)" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Despachos (UPD)</button>
+      </div>
+      <div class="ui-g-4">
+        <button pButton type="button" (click)="clearExternalId()" label="Limpiar" style="width:100%" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Limpiar</button>
+      </div>
+    </div>
+  </div>
+</div>

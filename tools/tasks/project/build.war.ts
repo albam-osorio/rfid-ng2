@@ -11,6 +11,6 @@ export = () => {
             welcome: 'index.html',
             displayName: 'RFID',
         }))
-        .pipe(zip('rfid.war'))
+        .pipe(zip('consola.war'))
         .pipe(gulp.dest(config.WAR_DEST));
 };

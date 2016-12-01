@@ -72,9 +72,8 @@ import { MdlDirective } from './common/directives/mdl/mdl.directive';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 
-import { PrimariaModule } from './tms-p/primaria.module';
-import { SecundariaModule } from './tms-s/secundaria.module';
-import { OperacionesModule } from './wms/operaciones.module';
+import { IntegracionesModule } from './integraciones/integraciones.module';
+import { MensajesModule } from './mensajes/mensajes.module';
 
 import { HomeModule } from './_seed/home/home.module';
 import { PrimengModule } from './_seed/primeng/primeng.module';
@@ -146,9 +145,8 @@ import { AboutModule } from './_seed/about/about.module';
     TreeModule,
     TreeTableModule,
     //
-    PrimariaModule,
-    SecundariaModule,
-    OperacionesModule,
+    IntegracionesModule,
+    MensajesModule,
     //
     PrimengModule,
     //

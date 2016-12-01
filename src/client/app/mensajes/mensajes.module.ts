@@ -65,14 +65,14 @@ import {TooltipModule} from 'primeng/primeng';
 import {TreeModule} from 'primeng/primeng';
 import {TreeTableModule} from 'primeng/primeng';
 
-import { SecundariaComponent } from './secundaria.component';
-import { DespachosSecundariaComponent } from './despachos/despachos-secundaria.component';
-import { RecogidasSecundariaComponent } from './recogidas/recogidas-secundaria.component';
+import { MensajesComponent } from './mensajes.component';
+// import { DespachosSecundariaComponent } from './despachos/despachos-secundaria.component';
+// import { RecogidasSecundariaComponent } from './recogidas/recogidas-secundaria.component';
 
 import { LocalStorageService } from '../common/services/local-storage.service';
-import { SecundariaService } from './secundaria.service';
+import { MensajesService } from './mensajes.service';
 
-import { SecundariaRoutes } from './secundaria.routes';
+import { MensajesRoutes } from './mensajes.routes';
 
 @NgModule({
   imports: [
@@ -141,85 +141,14 @@ import { SecundariaRoutes } from './secundaria.routes';
     TreeModule,
     TreeTableModule,
     //
-    RouterModule.forChild(SecundariaRoutes)
+    RouterModule.forChild(MensajesRoutes)
   ],
   declarations: [
-    SecundariaComponent,
-    DespachosSecundariaComponent,
-    RecogidasSecundariaComponent
+    MensajesComponent,
+    // DespachosSecundariaComponent,
+    // RecogidasSecundariaComponent
   ],
-  exports: [SecundariaComponent],
-  providers: [LocalStorageService, SecundariaService]
+  exports: [MensajesComponent],
+  providers: [LocalStorageService, MensajesService]
 })
-export class SecundariaModule { }
-
-
-
-// import {PanelModule, DataTableModule, SharedModule, DropdownModule, ContextMenuModule} from 'primeng/primeng';
-// import {ButtonModule} from 'primeng/primeng';
-// import {SplitButtonModule} from 'primeng/primeng';
-// import {DialogModule} from 'primeng/primeng';
-// import {InputTextareaModule} from 'primeng/primeng';
-// import {DataListModule} from 'primeng/primeng';
-// import {DataScrollerModule} from 'primeng/primeng';
-// import {DataGridModule} from 'primeng/primeng';
-// import {MessagesModule} from 'primeng/primeng';
-
-// import { ResumenEstadoOrdenesOrigenComponent } from './despachos/resumenes/estado-ordenes-origen.component';
-// import { ResumenEstadoEntregasOrigenComponent } from './despachos/resumenes/estado-entregas-origen.component';
-// import { ResumenReprogramacionesPendientesComponent } from './despachos/resumenes/reprogramaciones-pendientes.component';
-
-// import { SolicitudesDespachosComponent } from './despachos/ordenes/solicitudes-despachos.component';
-// import { LineasSolicitudDespachoComponent } from './despachos/ordenes/lineas-solicitud-despacho.component';
-// import { ExcepcionesDespachosComponent } from './despachos/ordenes/excepciones-despachos.component';
-// import { EntregasDespachosComponent } from './despachos/ordenes/entregas-despachos.component';
-// import { NovedadesDespachosComponent } from './despachos/ordenes/novedades-despachos.component';
-// import { CumplidosDespachosComponent } from './despachos/ordenes/cumplidos-despachos.component';
-// import { OtifDespachosComponent } from './despachos/ordenes/otif-despachos.component';
-
-
-// import { ListasOmsService } from '../common/listas-oms.service';
-// import { LocalStorageService } from '../common/local-storage.service';
-// import { UserService } from '../common/user.service';
-//
-// import { DespachosService } from './despachos/despachos.service';
-
-// @NgModule({
-//     imports: [
-//         CommonModule,
-//         FormsModule,
-//         PanelModule, DataTableModule, SharedModule, DropdownModule, ContextMenuModule,
-//         ButtonModule, SplitButtonModule,
-//         DialogModule,
-//         InputTextareaModule,
-//         DataListModule,
-//         DataScrollerModule,
-//         DataGridModule,
-//         MessagesModule,
-//         secundariaRouting,
-//     ],
-//     declarations: [
-//         SecundariaComponent,
-
-//         ResumenEstadoOrdenesOrigenComponent,
-//         ResumenEstadoEntregasOrigenComponent,
-//         ResumenReprogramacionesPendientesComponent,
-
-//         SolicitudesDespachosComponent,
-//         LineasSolicitudDespachoComponent,
-
-//         ExcepcionesDespachosComponent,
-//         EntregasDespachosComponent,
-//         NovedadesDespachosComponent,
-//         CumplidosDespachosComponent,
-//         OtifDespachosComponent
-
-//     ],
-//     providers: [
-//         LocalStorageService,
-//         UserService,
-//         ListasOmsService,
-//         DespachosService
-//     ]
-// })
-
+export class MensajesModule { }
